@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portait Chinois G.G </title>
+    <link rel="shortcut icon" type="image/x-icon" href='img/favicon.png'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&family=Paytone+One&family=Spectral:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="#" id="Open">
+            <span class="Burger-icon"></span>
+            <span class="Burger-icon"></span>
+            <span class="Burger-icon"></span>
+        </a>
+        <h1>
+            <div class="titre"> PORTRAIT CHINOIS</div>
+            <div class="prenom">Grandval Gael</div>
+        </h1>
+
+    </header>
+
+    <div id="SideNav" class="SideNav">
+        <a id="rubrique" class="Close"> X </a>
+        <ul>
+            <li> <a href="#animal" id="rubrique"> ➤ Animal</a></li>
+            <li> <a href="#saison" id="rubrique"> ➤ Saison</a></li>
+            <li> <a href="#moment" id="rubrique"> ➤ Moment de la <br>journée</a></li>
+            <li> <a href="#activité" id="rubrique"> ➤ Activité</a></li>
+            <li> <a href="#sentiment" id="rubrique"> ➤ Sentiment</a></li>
+            <li> <a href="#groupe" id="rubrique"> ➤ Groupe</a></li>
+            <li> <a href="#jeu" id="rubrique"> ➤ Licence de jeu</a></li>
+            <li> <a href="#formulaire" id="rubrique"> ➤ D'autres idées</a></li>
+        </ul>
+        <a href="#mentionsLegales"> ➤ Mentions Légales</a>
+    </div>
+
+
+    <div id="scroll_to_top">
+        <a href="#top"><img src="img/scrolltop.png" alt="Retourner en haut" /></a>
+    </div>
+
+    <div class="liste-analogies">
+        <!--<section>
+            <h2>Si j’étais [analogie], je serais [une valeur de l’analogie].</h2>
+        </section>-->
+    </div>
+
+    <div class="popup popup-invisible">
+        <img class="imgpopup" src="">
+        <div class="textbox">
+            <h3></h3>
+            <p></p>
+        </div>
+    </div>
+
+    <div id="formData"></div>
+
+    <form action="" method="post" id="myForm">
+        <fieldset>
+            <legend id="formulaire">D'autres idées ?</legend>
+
+            <label for="title" class="obligatoire">Si j'étais : </label><br>
+            <input type="text" id="title" name="title" placeholder="Ex : Une couleur" required /><br><br>
+
+            <label for="text" class="obligatoire">Je serais : </label><br>
+            <input type="text" id="text" name="text" placeholder="Ex : l'orange" required /><br><br>
+
+            <label for="explication" class="obligatoire">Explication :</label><br>
+            <textarea id="explication" maxlength="500" rows="4"
+                placeholder="Ex: Parce que c'est ma couleur favorite. (500 caractères max)"></textarea><br><br>
+
+            <label for="link1" class="obligatoire">Adresse de l'image :</label><br>
+            <input type="url" id="link1" name="link1"
+                placeholder="Ex: https://www.montersonbusiness.com/wp-content/uploads/2022/08/orange_580x580px.png" required/> <br>
+
+            <p class="obligatoire">Champs obligatoire</p>
+            <input type="submit" class="Envoyer" id="submit" value="Envoyer et ajouter" />
+            <p id="message">La section s'affichera ci-dessus.</p>
+
+
+
+        </fieldset>
+    </form>
+
+    <footer>
+        <div class="mentions-invisible">
+            <h4 class="mentionsLegales" id="mentionsLegales">Mentions Légales</h4>
+            <p>Site créé par GRANDVAL Gael dans le cadre d'un projet étudiant de la formation MMI de Champs-sur-Marne
+            </p>
+            <p>Toutes les images utilisées sur cette page sont libres de droit pour usage personnel, et ne feront jamais
+                l'objet d'une commercialisation.</p><br>
+
+            <p>Législation relative aux données à caractère personnel <br> <br>
+                Hébergeur : Université Gustave Eiffel - 2 rue Albert Einstein, 77420 Champs-sur-Marne, France - webmaster@univ-eiffel.fr <br><br>
+                Le formulaire permettant la création d’une analogie personnalisée recueille 
+                votre adresse IP. Pour toute question portant sur la collecte ou le traitement de vos données à
+                caractère personnel par l’UPEM, vous pouvez saisir la personne responsable du traitement des données qui
+                est : Philippe Gambette (philippe.gambette@univ-eiffel.fr). Les fichiers détenus par l'UPEM qui
+                comportent des données à caractère personnel ne seront jamais transmis à des tiers et ne feront jamais
+                l'objet d'une commercialisation. </p>
+            <p>©2023 Tous droits réservés par GRANDVAL Gael</p>
+        </div>
+    </footer>
+</body>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+
+</html>

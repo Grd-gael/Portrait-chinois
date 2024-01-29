@@ -1,0 +1,341 @@
+ 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html{
+    font-family: 'Paytone One', sans-serif;
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    -ms-scroll-snap-type: y mandatory;
+    -webkit-scroll-snap-type: y mandatory;
+    -o-scroll-snap-type: y mandatory;
+    -moz-scroll-snap-type: y mandatory;
+}
+.popup {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+}
+.new-popup {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+}
+
+.popup-visible {
+    display: block;
+    position: fixed;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+}
+.new-popup-visible {
+    display: block;
+    position: fixed;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+}
+.imgpopup{
+    box-sizing: border-box;
+    position: relative;
+    width: 551px;
+    height: 350px;
+    top: 237px;
+    left: 153px;
+    flex-shrink: 0;
+    border-radius: 10%;
+}
+
+.textbox{
+    position: absolute;
+    font-size: 1.5rem;
+    padding: 20px;
+    background-color: #F9BA7F;
+    flex-shrink: 0;
+    width: 568px;
+    height: 350px;
+    top: 234px;
+    left: 730px;
+    border-radius: 10%;
+}
+.textbox h3{
+    padding-bottom: 0;
+    position: relative;
+    bottom: 70px;
+    font-size: 3rem;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+.textbox p{
+    position: relative;
+    bottom: 120px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+.popup-invisible {
+    display: none;
+}
+.new-popup-invisible {
+    display: none;
+}
+
+header {
+    display:block;
+    width: 100%;
+    height: 140px;
+    background-color: black;
+    position: relative;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 4px 17px 6px rgba(0,0,0,0.34); 
+    box-shadow: 0px 10px 13px -7px #000000, 0px 4px 17px 6px rgba(0,0,0,0.34);
+    scroll-snap-align: start;
+}
+
+section{
+    background-color: black;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+.SideNav{
+    height: 100%;
+    width: 410px;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: -410px;
+    background-color: #e8e8e8;
+    padding-top: 60px;
+    transition: left 0.5s ease;
+    opacity: 98%;
+}
+
+.SideNav a {
+    text-align: center ;
+    margin-top: 15px;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #f27c58;
+    display: block;
+    transition: 0.3s;
+}
+
+.SideNav a:hover{
+    color: #a92700;
+    font-size: 2.3rem;
+}
+
+.SideNav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.menuOuvert{
+    left: 0;
+}
+
+.Close{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 2rem;
+}
+.Close:hover{
+    cursor: pointer;
+}
+
+.Burger-icon{
+    z-index: 2;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    display: block;
+    width: 60px;
+    height: 10px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+.Burger-icon span:hover{
+    cursor: pointer;
+}
+
+h1 {
+    position: relative;
+    margin-top: 0;
+    top: -20px;
+    font-family: 'Paytone One', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.titre{
+    font-size: 2.5rem;
+}
+.prenom{
+    font-size: 1rem;
+    color: #f27c58;
+}
+h2{
+    font-size: 2rem;
+    position: relative;
+    margin: auto;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+.cache{
+    display: none;
+}
+body {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0)
+}
+
+.block-img {
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    height: 100vh;
+}
+
+.mot-cliquable {
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+}
+.new-mot-cliquable {
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+}
+.mot-cliquable:hover {
+    cursor: pointer;
+    font-size: 2.3rem;
+}
+.new-mot-cliquable:hover {
+    cursor: pointer;
+    font-size: 2.3rem;
+}
+.animal {
+    background-image: url(img/fox.jpg);
+}
+
+.sentiment{
+    background-image: url(img/montre.jpg);
+}
+
+.saison{
+    background-image: url(img/palmier.jpg);
+}
+
+.moment{
+    background-image: url(img/sunset.jpg);
+}
+
+.activité{
+    background-image: url(img/ski.jpg);
+}
+.groupe{
+    background-image: url(img/coldplay.jpeg);
+}
+
+.jeu{
+    background-image: url(img/Rubis_zelda.png);
+    background-position: center;
+}
+
+form{
+    text-align: center;
+    font-family: 'Paytone One', sans-serif;
+    -webkit-box-shadow: 0px -7px 10px 0px rgb(0, 0, 0);
+    -moz-box-shadow: 0px -7px 10px 0px rgb(0, 0, 0);
+    box-shadow: 0px -7px 10px 0px rgb(0, 0, 0);
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+legend{
+    font-size: 2rem;
+    color: #f27c58;
+    text-align: center;
+}
+
+label.obligatoire::after{
+    content: " *";
+    color: #f27c58;
+}
+
+p.obligatoire::before{
+    content: "* ";
+    color: #f37d59
+}
+input[type="text"], textarea, input[type='url'], input[type='email']{
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    font-size: calc(0.75vw + 0.5vh);
+    box-sizing: border-box;
+    transition: 0.5s;
+    border-radius: 10px;
+    border: 3px solid #ffffffbf;
+    background-color: rgba(34, 34, 50, 0.5);
+    margin: 5px;
+}
+input.Envoyer{
+    border: #000000 solid 1px;
+    font-size: 1rem;
+    font-family:'Paytone One', sans-serif;
+    background-image: linear-gradient(to right, #f37d59 0%, #eeb26d 51%, #f37d59  100%);
+    padding: 5px 20px;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border-radius: 10px;
+}      
+input.Envoyer:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+     
+.mentionsLegales{
+    text-align: center;
+    font-size: 1.4rem;
+}    
+.mentionsLegales:hover{
+    cursor: pointer;
+}
+.mentions-invisible p{
+    display: none;
+}
+.box {
+    margin: 0 auto;
+    background: black;
+    padding: 35px;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    background-clip: padding-box;
+    text-align: center;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    font-family: 'Patua One', serif;
+  }
+  #scroll_to_top {
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    bottom: 50px;
+    right: 30px;
+    transform: rotate(90deg);
+  }
+  #scroll_to_top img {
+    width: 80px;
+    position: relative;
+    right: 20px;
+  }
